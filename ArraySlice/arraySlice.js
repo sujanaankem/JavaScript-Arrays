@@ -27,16 +27,18 @@ function onClickPop() {
 }
 function onClickSlice() {
     debugger;
-    let Animals = document.getElementById("txtAnimal").value;
+    let add=["panda",'kangaroo']
     let startNumber = document.getElementById("txtStart").value;
-    let EndNumber = document.getElementById("txtEnd").value;
-    document.getElementById("txtAnimal").value = "";
-    animals.slice(Animals);
-    let i = startNumber;
+    let endNumber = document.getElementById("txtEnd").value;
+    let x=animals.slice(startNumber,endNumber);
+       let y=animals.splice(startNumber,endNumber,...add)
+    let i = 0;
     content = "";
-    while (i < EndNumber) {
+    while (i < animals.length) {
         content += `<p>${i+1}) ${animals[i]}</p>`
         i++;
     }
     document.getElementById("divSlice").innerHTML = content;
 }
+
+
