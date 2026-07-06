@@ -42,3 +42,17 @@ function onClickSlice() {
 }
 
 
+
+function arrayContentBinding(inputArray = []) {
+    let content = "";
+    i = 0;
+    while (i < inputArray.length) {
+        content += `<p><b>${i + 1})</b> ${inputArray[i]}</p>`
+        i++;
+
+    }
+    return content;
+
+}
+
+
