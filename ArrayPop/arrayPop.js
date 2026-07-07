@@ -44,6 +44,7 @@ function onClickUnShift(){
     document.getElementById("txtVegitables").value = "";
     vegitables.unshift(favVegitables);
     let i=0;
+
     content ="";
     while(i < vegitables.length){
      content +=`<p>${i+1}) ${vegitables[i]}</p>`;
